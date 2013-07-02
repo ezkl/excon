@@ -13,7 +13,7 @@ module Excon
     end
 
     def params
-      display_waring("Excon::Connection#params is deprecated use Excon::Connection#data instead (#{caller.first})")
+      display_warning("Excon::Connection#params is deprecated use Excon::Connection#data instead (#{caller.first})")
       @data
     end
     def params=(new_params)
